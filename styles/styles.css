@@ -1,0 +1,377 @@
+/* 
+yellow #F2E852 
+light yellow  #F2EFC2  #fffce8 
+Orange #F2780C
+Brick  #BF2604
+Brown  #590202
+Last Revised: 22SEP20
+*/
+
+/*
+Title
+    font-family: 'Lobster', cursive;
+Body
+    font-family: 'Montserrat', sans-serif;
+*/
+
+/*** MOBILE***/
+        /*Navbar*/
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #fffce8;
+        text-align: center;
+    }
+    header {
+        position: sticky;
+        background-color: #590202;
+        top: 0;
+        z-index: 1;
+    }
+    ul, li, a {
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+    }
+    ul.navbar {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 0.9em;
+        margin: 0;
+        font-size: 0.8em;
+    }
+    ul.navbar li {
+        display: inline-block;
+        margin-right: 1em;
+        margin-left: auto;
+        font-weight: bolder;
+        padding-top: 12px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    ul.navbar li a {
+        text-decoration: none;
+        color: #fffce8 ;
+        text-shadow: 2px 2px 4px black;
+    }
+    .nav-item:hover {
+    color: #F2E852; 
+    }
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../pictures/burritoHero.jpg");
+        height: 300px;
+        background-color: #BF2604;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .skewed {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        transform: skewY(-11deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .hero-title {
+        font-family: 'Lobster', cursive;
+        color:#F2E852;
+        padding-top: 51px;
+        font-size: 4em;
+        text-shadow: 2px 2px 4px black;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+    .hero-sub {
+        font-family: 'Lobster', cursive;
+        color: #F2E852;
+        margin: 0;
+        
+        text-shadow: 1px 1px 1px black;
+    }
+
+    /* Site Description */
+    .burritoMasala, .img-decoration {
+        text-align: center;
+    }
+    .top {
+        padding-top: 3em;
+    }
+    .bottom {
+        padding-top: 1em;
+        padding-bottom: 3em;
+    }
+    .img-top, .img-bottom {
+        width: 50%;
+    }
+    .description {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+    }
+    /* Menu */
+    #menu {
+        background-color: #cc5f00 ;
+        text-align: center;
+        color: #fffce8;
+        font-weight: bold;
+    }
+    .menu-title {
+        padding-top: 2em;
+    }
+    .shadow {
+        text-shadow: 2px 2px 4px black;
+    }
+    .menu-img {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+    }
+    hr {
+        width: 80%;
+        line-height: 5px;
+        color: #BF2604;
+
+    }
+    .alwaysVisible {
+        display: inline-block;
+    }
+    .options-list, li {
+        padding: 0.8em;
+    }
+    .step1, .step2, .step3, .step4  {
+        padding-top: 1em;
+    }
+    .opts2 {
+        margin-left: 15%;
+        text-align: left;
+    }
+
+    /* Order */
+    #order, #location, #about {
+        padding: 15px;
+    }
+    .order {
+        margin: 0;
+    }
+   .phone {
+       font-size: 2em;
+       color:#cc5f00;
+   }
+   p a {
+       color: black;
+       font-weight: bolder;
+   }
+   .small {
+       font-size: 0.8em;
+   }
+
+   /* Location */
+   .map {
+       max-width: 100%;
+   }
+
+   /* About */
+   #about {
+       background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../pictures/masala.jpg");
+        background-color: #BF2604;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fffce8;
+   }
+   .about {
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .hide {
+       display: none;
+   }
+   /* Footer */
+   .footer {
+       background-color: #590202;
+       color: #fffce8;
+       padding: 1em;
+   }
+   .icon {
+       width: 30px;
+       padding: 15px;
+   }
+   .zoom {
+       transition: transform .2s;
+   }
+   .zoom:hover {
+       transform: scale(1.2);
+   } 
+
+@media only screen and (min-width: 400px) {
+    /*Navbar*/
+    ul.navbar {
+        font-size: 1em;
+    }
+    /* Hero */
+    .hero {
+        height: 220px;
+    }
+    /* Manu */
+    .menu-img {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+    /* Manu */
+    .menu-img {
+        width: 70%;
+    }
+}
+/* 
+For displays higher than 768px, css grid was used to display menu and options in two columns for tablet and four for desktop. A complete guide to grid css can be found here: 
+https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: initial;
+        justify-content: center;
+    }
+    hr {
+        display: none;
+    }
+    .alwaysVisible {
+        width: 70%;
+    }
+    .img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .opts1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .img3 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .opts3 {
+        grid-column-start: 1;
+        grid-row-start: 6;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    /* Hero*/
+    .hero {
+        height: 500px;
+    }
+    .hero-title {
+        padding-top: 100px;
+        font-size: 8em;
+    }
+    /* Intro */
+    .intro {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .top, .bottom, .description {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Menu */
+    .menu-img {
+        width: 100%;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 5em;
+    }
+    .options-list { 
+        margin: 0px;
+    }
+    .options-list, li {
+        padding: 9px;
+    }
+    .step1 {
+        grid-column: 1 / span 2;
+        grid-row-start: 1;
+        text-align: end;
+        margin-right: 100px;
+    }
+    .opts1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        text-align: end;
+    }
+    .img1 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        margin-right: 10px;
+    }
+    .step2 {
+        grid-column: 3 / span 2;
+        grid-row-start: 1;
+        margin-left: 100px;
+        text-align: start;
+    }
+    .img2 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        margin-left: 10px;
+    }
+    .opts2 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        margin: 0;
+    }
+    .step3 {
+        grid-column: 1 / span 2;
+        grid-row-start: 3;
+        text-align: end;
+        margin-right: 100px;
+        padding: 0px;
+    }
+    .opts3 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        text-align: end;
+    }
+    .img3 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        margin-right: 10px;
+    }
+    .step4 {
+        grid-column: 3 / span 2;
+        grid-row-start: 3;
+        text-align: start;
+        margin-left: 100px;
+        padding: 0px;
+    }
+    .img4 {
+        grid-column-start: 3;
+        grid-row-start: 4;
+        margin-left: 10px;
+    }
+    .opts4 {
+        grid-column-start: 4;
+        grid-row-start: 4;
+        text-align: start;
+    }
+
+    .alwaysVisible {
+        width: 50%;
+    }
+    .about {
+        width: 50%;
+    }
+}
