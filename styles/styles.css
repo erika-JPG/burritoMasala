@@ -4,7 +4,7 @@ light yellow  #F2EFC2  #fffce8
 Orange #F2780C
 Brick  #BF2604
 Brown  #590202
-Last Revised: 22SEP20
+Last Revised: 13NOV20
 */
 
 /*
@@ -218,7 +218,7 @@ Body
     .hero {
         height: 220px;
     }
-    /* Manu */
+    /* Menu */
     .menu-img {
         width: 80%;
     }
@@ -226,7 +226,7 @@ Body
 }
 
 @media only screen and (min-width: 600px) {
-    /* Manu */
+    /* Menu */
     .menu-img {
         width: 70%;
     }
